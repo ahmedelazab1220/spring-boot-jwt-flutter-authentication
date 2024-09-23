@@ -1,0 +1,153 @@
+!SESSION 2024-09-23 18:30:29.551 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\\Users\\Lenovo\\Documents\\Github\\Misc\\Authentication
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-23 18:30:34.049
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-23 18:30:35.302
+!MESSAGE Logback config file: C:\Users\Lenovo\Documents\Github\Misc\Authentication\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-23 18:30:35.757
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-23 18:30:35.757
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-23 18:30:36.129
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-23 18:30:36.129
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-23 18:30:41.408
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Lenovo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:19.979
+!MESSAGE Classpath changed for project: springboot-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:19.979
+!MESSAGE Boot project ADDED: springboot-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:19.979
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:20.001
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-23 18:43:20.034
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-21\bin\javaw.exe
+-cp
+C:\Users\Lenovo\eclipse\jee-2023-092\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\Lenovo\eclipse\jee-2023-092\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\Lenovo\eclipse\jee-2023-092\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Lenovo/Documents/Github/Misc/Authentication/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1727106200033
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:20.034
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-23 18:43:20.052
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 14812
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:21.758
+!MESSAGE Classpath changed for project: springboot-authentication-jwt
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2024-09-23 18:43:22.184
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2024-09-23 18:43:22.184
+!MESSAGE Unexpected internal Error occured
+!STACK 0
+java.lang.IllegalStateException: repository system is already shut down
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.validateSession(DefaultRepositorySystem.java:462)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:275)
+	at org.apache.maven.project.ProjectModelResolver.resolveModel(ProjectModelResolver.java:172)
+	at org.apache.maven.model.building.DefaultModelBuilder.importDependencyManagement(DefaultModelBuilder.java:1202)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:528)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:419)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:333)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:295)
+	at org.apache.maven.project.DefaultProjectBuilder.initParent(DefaultProjectBuilder.java:911)
+	at org.apache.maven.project.DefaultProjectBuilder.initProject(DefaultProjectBuilder.java:674)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:188)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:333)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:295)
+	at org.apache.maven.project.DefaultProjectBuilder.initParent(DefaultProjectBuilder.java:911)
+	at org.apache.maven.project.DefaultProjectBuilder.initProject(DefaultProjectBuilder.java:674)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:616)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:375)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:126)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:904)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:248)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2024-09-23 18:43:23.577
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-09-23 18:43:23.577
+!MESSAGE The project description file (.project) for 'springboot-authentication-jwt' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:23.704
+!MESSAGE Classpath changed for project: springboot-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:23.710
+!MESSAGE Boot project REMOVED: springboot-authentication-jwt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-23 18:43:25.459
+!MESSAGE Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getArtifactKey()" because "facade" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:235)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:43:37.637
+!MESSAGE Classpath changed for project: springboot-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:44:05.093
+!MESSAGE Classpath changed for project: server-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:44:05.093
+!MESSAGE Boot project ADDED: server-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:44:12.906
+!MESSAGE Classpath changed for project: server-authentication-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-23 18:44:16.567
+!MESSAGE Classpath changed for project: server-authentication-jwt
